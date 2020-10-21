@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Election Dapp</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<br/> 
+<div class="container">
+  <h2>Vote for Best Leader</h2>
+  <p>Voting through Ethereum Blockchain Network</p>
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width:300px">
+        <img class="card-img-top" src="images/india.png" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">Narendra Modi</h4>
+          <p class="card-text">Prime Minister of India</p>
+          <a href="#" class="btn btn-primary btn-vote" data-id="0">Vote</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width:300px">
+        <img class="card-img-top" src="images/usa.png" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">Donald Trump</h4>
+          <p class="card-text">President of USA</p>
+          <a href="#" class="btn btn-warning btn-vote" data-id="1">Vote</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width:300px">
+        <img class="card-img-top" src="images/russia.png" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">Vladimir Putin</h4>
+          <p class="card-text">President of Russia</p>
+          <a href="#" class="btn btn-danger btn-vote" data-id="2">Vote</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br/><br/>
+<div class="container">
+  <h2>Votes</h2>
+  <p>Following were the votes polled through Blockchain Network</p>            
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name of Contestant</th>
+        <th>Number of Votes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Narendra Modi</td>
+        <td id="v1"></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Donald Trump</td>
+        <td id="v2"></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Vladimir Putin</td>
+        <td id="v3"></td>
+      </tr>
+    </tbody>
+  </table>
+  <center><p>Your address is <b id="add"></b></p></center>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/web3.min.js"></script>
+<script src="js/truffle-contract.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
